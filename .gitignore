@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/*
+
+datasets/TX/*
+datasets/TX2/*
+datasets/ClimateEngineTifs/*
+datasets/tl_2023_48_tract/*
+datasets/TX_reprojected/*
+
+models/*
+
+catboost_info/*
+
+# ignore requestTest.py for APIKEY secuirity
+requestTest.py
