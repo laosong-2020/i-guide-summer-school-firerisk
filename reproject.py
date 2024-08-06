@@ -9,7 +9,7 @@ And save the reprojected raster file to the output path.
 
 import rasterio 
 from rasterio.warp import calculate_default_transform, reproject, Resampling
-import geopandas as gpd
+import geopandas as gpd 
 
 from config import feature_dict_list, BASE_DIR, DATASET_DIR
 

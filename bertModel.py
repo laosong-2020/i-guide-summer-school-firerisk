@@ -1,6 +1,7 @@
 import numpy as np # linear algebra
 import pandas as pd
 import os
+import platform
 
 from config import DATASET_DIR
 
@@ -144,6 +145,13 @@ def predict(model, dataloader, device):
     return np.array(predicted_labels), np.array(actual_labels)
 
 if __name__ == "__main__":
+
+    system = platform.system()
+    if system == "Darwin" and torch.backends.mps.is_available():
+        device = torch.device("mps")
+    else:
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    
     # load data
     df = pd.read_csv(f"{DATASET_DIR}/dataset_bert.csv")
     df.rename(
@@ -168,8 +176,7 @@ if __name__ == "__main__":
     tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
     model = BertRegressor.from_pretrained(MODEL_NAME, config=config)
-
-    device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+    
     ## Putting model to device
     model = model.to(device)
     ## Takes as the input the logits of the positive class and computes the binary cross-entropy 
