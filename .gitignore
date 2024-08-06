@@ -13,3 +13,5 @@ catboost_info/*
 
 # ignore requestTest.py for APIKEY secuirity
 requestTest.py
+
+datasets.tgz
