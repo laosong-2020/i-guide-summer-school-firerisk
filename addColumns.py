@@ -7,7 +7,7 @@ This source code file defines functions
 to add columns to a GeoDataFrame based on the values of reprojected raster files.
 '''
 
-import geopandas as gpd 
+import geopandas as gpd
 import pandas as pd
 import rasterio
 import numpy as np
