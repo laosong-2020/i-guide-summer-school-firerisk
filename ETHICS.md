@@ -4,7 +4,13 @@
 
 ## A. Data Collection
  - [ ] **A.1 Informed consent**: If there are human subjects, have they given informed consent, where subjects affirmatively opt-in and have a clear understanding of the data uses to which they consent?
+ * No, our research does not include any data involving human subjects.
+
  - [ ] **A.2 Collection bias**: Have we considered sources of bias that could be introduced during data collection and survey design and taken steps to mitigate those?
+ * When working with raster and vector data, an issue may arise when calculating values in raster data using vector boundaries. Specifically, there are cells that lie on the boundary line (Figure 1). To address this, we utilized the Shapely package in Python, which allows us to classify cells based on their overlap with the boundary. Cells that have 50% or more of their area inside the boundary are considered inside, while those with less than 50% are considered outside. Consequently, we excluded the values of cells classified as outside from our dataset.
+
+![Figure 1. raster and vector data](https://jo-wilkin.github.io/GEOG0030/coursebook/images/w9/rtovector.png)
+
  - [ ] **A.3 Limit PII exposure**: Have we considered ways to minimize exposure of personally identifiable information (PII) for example through anonymization or not collecting information that isn't relevant for analysis?
  - [ ] **A.4 Downstream bias mitigation**: Have we considered ways to enable testing downstream results for biased outcomes (e.g., collecting data on protected group status like race or gender)?
 
