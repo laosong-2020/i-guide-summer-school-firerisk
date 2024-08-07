@@ -27,7 +27,7 @@ nri_columns = [
         'WFIR_HLRP',
         'WFIR_HLRA',
         'WFIR_HLRR',
-        'WFIR_EALT',
+        'WFIR_EALB',
     ]
 
 feature_dict_list = [
