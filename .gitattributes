@@ -1,1 +1,2 @@
 datasets/results.geojson filter=lfs diff=lfs merge=lfs -text
+datasets/NRI/NRI_Table_CensusTracts_Texas.csv filter=lfs diff=lfs merge=lfs -text

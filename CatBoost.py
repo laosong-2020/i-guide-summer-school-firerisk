@@ -18,7 +18,7 @@ from config import BASE_DIR, DATASET_DIR
 
 if __name__ == "__main__":
     # load data
-    file_path = f"{DATASET_DIR}/dataset.csv"
+    file_path = f"{DATASET_DIR}/dataset.csv" 
     df = pd.read_csv(file_path)
 
     # transform all columns to numeric and handle values that can't be converted

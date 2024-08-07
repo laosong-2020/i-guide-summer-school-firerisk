@@ -12,6 +12,24 @@ import os
 BASE_DIR = os.getcwd()
 DATASET_DIR = f"{BASE_DIR}/datasets"
 
+nri_columns = [
+        'TRACTFIPS',
+        'POPULATION',
+        'BUILDVALUE',
+        'AGRIVALUE',
+        'WFIR_AFREQ',
+        'WFIR_EXPB',
+        'WFIR_EXPP',
+        'WFIR_EXPPE',
+        'WFIR_EXPA',
+        'WFIR_EXPT',
+        'WFIR_HLRB',
+        'WFIR_HLRP',
+        'WFIR_HLRA',
+        'WFIR_HLRR',
+        'WFIR_EALB',
+    ]
+
 feature_dict_list = [
     {
         "file_name": f"{DATASET_DIR}/ClimateEngineTifs/DAYMET_Precipitation_JJA.tif",
@@ -79,12 +97,7 @@ feature_dict_list = [
         "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/HUExposure.tif",
         "method": "sum"
     },
-    {
-        "file_name": f"{DATASET_DIR}/TX2/PopCount_TX.tif",
-        "feature_name": "Population-Count",
-        "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/PopCount.tif",
-        "method": "sum"
-    },
+    
     {
         "file_name": f"{DATASET_DIR}/TX2/PopDen_TX.tif",
         "feature_name": "Population-Density",
@@ -134,22 +147,32 @@ feature_dict_list = [
         "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/Exposure.tif",
         "method": "mean"
     },
-    {
-        "file_name": f"{DATASET_DIR}/TX2/HUImpact_TX.tif",
-        "feature_name": "Housing-Unit-Impact",
-        "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/HUImpact.tif",
-        "method": "sum"
-    },
-    {
-        "file_name": f"{DATASET_DIR}/TX2/HURisk_TX.tif",
-        "feature_name": "Housing-Unit-Risk",
-        "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/HURisk.tif",
-        "method": "mean"
-    },
-    {
-        "file_name": f"{DATASET_DIR}/TX/WHP_TX.tif",
-        "feature_name": "Wildfire-Hazard-Potential-index",
-        "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/WHP.tif",
-        "method": "mean"
-    },
 ]
+
+# useless columns
+"""
+{
+    "file_name": f"{DATASET_DIR}/TX2/PopCount_TX.tif",
+    "feature_name": "Population-Count",
+    "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/PopCount.tif",
+    "method": "sum"
+},
+{
+    "file_name": f"{DATASET_DIR}/TX2/HUImpact_TX.tif",
+    "feature_name": "Housing-Unit-Impact",
+    "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/HUImpact.tif",
+    "method": "sum"
+},
+{
+    "file_name": f"{DATASET_DIR}/TX2/HURisk_TX.tif",
+    "feature_name": "Housing-Unit-Risk",
+    "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/HURisk.tif",
+    "method": "mean"
+},
+{
+    "file_name": f"{DATASET_DIR}/TX/WHP_TX.tif",
+    "feature_name": "Wildfire-Hazard-Potential-index",
+    "reprojected_file_name": f"{DATASET_DIR}/TX_reprojected/WHP.tif",
+    "method": "mean"
+},
+"""
