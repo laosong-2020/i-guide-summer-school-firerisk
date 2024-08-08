@@ -34,7 +34,6 @@
  ### 2. Substatnical number of minorities and elderly
  - Including Hispanic or Latino, African Americans, Asian American, and Native Americans. Moreover, individuals aged 65 and older make up around 12% to 14% of the total population in Texas. The number of residents aged 65 and older in Texas has been increasing steadily.
 
-
  # Referencees 
  * KEVIN VU (2023) "Texas drought has deepened amid this year’s brutal heat" https://www.texastribune.org/2023/10/02/texas-drought-agriculture-wildfires/
  * U.S. Drought Monitor (2024) https://droughtmonitor.unl.edu/currentmap/statedroughtmonitor.aspx?TX
