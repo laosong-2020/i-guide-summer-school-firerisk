@@ -28,10 +28,11 @@
   * Fuel treatment, prescribed burning can reduce wildfire
   * home insurance plans can companste economic loss
 
-# study site
+# Study site
  ### 1. Increasing trends of drought
  - A prolonged summer in Texas, resulting in repetitive droughts, is affecting more than 80% of the state and contributing to wildfire (Vu, 2023). According to the U.S. Drought Monitor, nearly 40% of Texas is experiencing extreme or exceptional drought in 2024. Climate change is expected to increase drought severity, which is likely to further exacerbate the risk of wildfires.
- - Texas as substatnical number of minorities including Hispanic or Latino, African Americans, Asian American, and Native Americans. Moreover, individuals aged 65 and older make up around 12% to 14% of the total population in Texas. The number of residents aged 65 and older in Texas has been increasing steadily.
+ ### 2. Substatnical number of minorities and elderly
+ - Including Hispanic or Latino, African Americans, Asian American, and Native Americans. Moreover, individuals aged 65 and older make up around 12% to 14% of the total population in Texas. The number of residents aged 65 and older in Texas has been increasing steadily.
 
 
  # Referencees 
