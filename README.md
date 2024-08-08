@@ -1,6 +1,6 @@
 # i-guide-summer-school-firerisk
 
-This repo contains codes and datasets used in the I-GUIDE Summer School 2024 Team 5. The project goal is to leverage AI in environmental sustainability by predicting firerisks to housing units in Texas, US.
+This   repo contains codes and datasets used in the I-GUIDE Summer School 2024 Team 5. The project goal is to leverage AI in environmental sustainability by predicting firerisks to housing units in Texas, US.
 
 ## Flow Chart
 
