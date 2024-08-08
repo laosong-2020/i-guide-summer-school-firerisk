@@ -114,3 +114,66 @@ https://github.com/USEPA/Dasymetric-Toolbox-OpenSource/tree/master
 https://essd.copernicus.org/articles/14/2833/2022/#section3
 
 
+# Gradient Boost, XGBoost
+## Gradient Boost
+
+Gradient boosting is a machine learning ensemble technique. It combines the predictions result of multiple weak learner model, specifically decision tree. By building a new model on the errors or residuals of previous model, gradient boosting optimizes the model performance sequentially. 
+
+- How Gradient boosting works
+    
+    ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/cb0dfb90-df60-4e9d-906b-98dc4a714221/c05ed080-a0a5-4dbb-9f6d-fb2bc4952f39/Untitled.png)
+    
+    The ensemble consists of M trees. Tree1 is trained using the feature matrix *X* and the labels *y*. The predictions labeled *y1(hat)* are used to determine the training set residual errors *r1*. Tree2 is then trained using the feature matrix *X* and the residual errors *r1* of Tree1 as labels. The predicted results *r1(hat)* are then used to determine the residual *r2*. The process is repeated until all the M trees forming the ensemble are trained. 
+    
+
+1. A loss function to be optimized
+    1. The loss function used depends on the type of problem being solved. Regression task uses a squared error and classification task uses logarithmic loss.
+2. A weak learner to make predictions
+    1. Decision trees are used as the weak learner in gradient boosting. It is common to constrain the weak learners in some ways such as maximum number of layers, nodes, splits or leaf nodes. 
+3. Additive model to add weak learner to minimize the loss function
+    1. Gradient descent is used to minimize the loss
+
+**Pros:**
+
+1. **High Accuracy**: Gradient boosting can produce highly accurate predictive models by combining many weak learners (e.g., decision trees).
+2. **Flexibility**: It can be applied to both regression and classification problems and is adaptable to different loss functions.
+3. **Feature Importance**: The algorithm provides insights into feature importance, helping to understand which features contribute most to predictions.
+4. **Handles Non-Linear Relationships**: Can capture complex non-linear patterns in the data due to its ensemble nature.
+
+**Cons:**
+
+1. **Training Time**: Gradient boosting can be slow to train, especially with large datasets, due to its sequential nature.
+2. **Overfitting**: The algorithm can overfit if not properly regularized or if the trees are too deep.
+3. **Parameter Tuning**: Requires careful tuning of multiple hyperparameters, such as learning rate, number of trees, and tree depth.
+4. **Interpretability**: Models can be difficult to interpret, especially with many trees.
+
+## XGBoost
+
+**XGBoost (Extreme Gradient Boosting)** is an advanced implementation of gradient boosting that focuses on speed and performance. It was developed to address some limitations of the traditional gradient boosting algorithm. Here are some key improvements and features of XGBoost:
+
+1. **Regularization**: XGBoost includes L1 (Lasso) and L2 (Ridge) regularization terms in its objective function, which helps prevent overfitting and improves model generalization.
+2. **Parallelization**: The algorithm is designed to be parallelized, allowing it to take full advantage of multi-core processors and making it much faster than traditional gradient boosting implementations.
+3. **Tree Pruning**: XGBoost uses a more effective tree pruning algorithm called "max depth" rather than the "depth-first" approach used in standard gradient boosting. This leads to more efficient and compact trees.
+4. **Scalability**: XGBoost is highly scalable and can handle large datasets with millions of examples and features.
+
+**Pros:**
+
+1. **Speed and Performance**: XGBoost is optimized for speed and performance through parallel and distributed computing, making it significantly faster than traditional gradient boosting.
+2. **Regularization**: Incorporates L1 (Lasso) and L2 (Ridge) regularization, which helps prevent overfitting and improves model generalization.
+3. **Handling Missing Values**: Can automatically handle missing data, making preprocessing easier.
+4. **Built-in Cross-Validation**: Supports built-in cross-validation, allowing for better model evaluation and hyperparameter tuning.
+5. **Scalability**: Highly scalable and can efficiently handle large datasets.
+6. **Tree Pruning**: Uses a more effective tree pruning algorithm that improves model efficiency and reduces overfitting.
+
+**Cons:**
+
+1. **Complexity**: The algorithm is more complex, with additional parameters to tune, which can make it challenging to configure optimally.
+2. **Resource Intensive**: Despite optimizations, XGBoost can still be resource-intensive, requiring significant memory and computation power, especially with very large datasets.
+3. **Sensitivity to Hyperparameters**: Like gradient boosting, XGBoost's performance is highly dependent on proper hyperparameter tuning, which can be time-consuming.
+4. **Interpretability**: While feature importance is provided, the model itself can be difficult to interpret due to its ensemble nature.
+
+https://www.datacamp.com/tutorial/guide-to-the-gradient-boosting-algorithm
+
+https://machinelearningmastery.com/gentle-introduction-gradient-boosting-algorithm-machine-learning/
+
+https://www.analyticsvidhya.com/blog/2021/09/gradient-boosting-algorithm-a-complete-guide-for-beginners/
