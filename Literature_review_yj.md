@@ -22,3 +22,9 @@
 ### 6. The distributional incidence of wildfire hazard in the western United States
 (https://iopscience.iop.org/article/10.1088/1748-9326/ac60d7/meta)
     * input varaibels : Per capita income, Percent below poverty line, Percent white (non-Hispanic), Percent Native American, Percent over 65, housing value
+
+### 7. The Economics of Wildfire in the United States (https://www.annualreviews.org/content/journals/10.1146/annurev-resource-111920-014804)
+  * Local wildfire education programs is an important factor for reducing wildfire
+  * Fuel treatment, prescribed burning can reduce wildfire
+  * home insurance plans can companste economic loss
+
