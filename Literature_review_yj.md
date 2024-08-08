@@ -27,6 +27,7 @@
   * Local wildfire education programs are an important factor in reducing wildfire
   * Fuel treatment prescribed burning can reduce wildfire
   * home insurance plans can cause economic loss
+  * structure proximity to fuels and lower structure density are associated with an increased probability of structure loss (Caggiano et al., 2020)
 
 # Study site
  ### 1. Increasing trends of drought
@@ -34,13 +35,22 @@
 
  ### 2. Substantial number of minorities and elderly
  - Including Hispanic or Latino, African Americans, Asian Americans, and Native Americans. Moreover, individuals aged 65 and older make up around 12% to 14% of the total population in Texas. The number of residents aged 65 and older in Texas has been increasing steadily.
+ 
 
 # Significance of our research
+- fire can directly impact people by posing an immediate threat to life, property, and local economies (Milne et al. 2014). Beyond these direct effects, fire can influence behavior as people evacuate or simply try to avoid smoke exposure (McCaffrey et al. 2018). In 2020, damages from wildfire totaled US$16.5 billion in the United States, with more than 10,000 structures damaged or destroyed in California alone (NOAA 2021).
+Texas is average of $2.0-$5.0 Billion-dollar loss annulay due to wildfire.
+
 - While many studies focus on agricultural economic loss, fewer studies examine the economic impact of property loss.
-- Utilization of innovative datasets that describe more detailed environmental factors prone to wildfire (e.g., limited studies have considered climate variables and environmental factors such as fuel disturbance in their analysis, with most studies utilizing vegetation or land use data).- Employing multiple machine learning methods to understand the uncertainty and discrepancies among models.
+- Utilization of innovative datasets that describe more detailed environmental factors prone to wildfire (e.g., limited studies have considered climate variables and environmental factors such as fuel disturbance in their analysis, with most studies utilizing vegetation or land use data). 
+- Employing multiple machine learning methods to understand the uncertainty and discrepancies among models.
 
  # Referencees 
  * KEVIN VU (2023) "Texas drought has deepened amid this year's brutal heat" https://www.texastribune.org/2023/10/02/texas-drought-agriculture-wildfires/
  * U.S. Drought Monitor (2024) https://droughtmonitor.unl.edu/currentmap/statedroughtmonitor.aspx?TX
  * https://cdnsciencepub.com/doi/full/10.1139/er-2020-0019
+ * Milne M, Clayton H, Dovers S, Cary GJ. 2014. Evaluating benefits and costs of wildland fires: critical review and future applications. Environ. Hazards 13:2114–32
+ * Bayham, J., Yoder, J. K., Champ, P. A., & Calkin, D. E. (2022). The economics of wildfire in the United States. Annual Review of Resource Economics, 14(1), 379-401.
+ * NOAA (2011) https://www.ncei.noaa.gov/access/billions/state-summary/TX
+ * Headwaters structures that were destroyed by wildfires in each state https://headwaterseconomics.org/natural-hazards/structures-destroyed-by-wildfire/#methods
 
