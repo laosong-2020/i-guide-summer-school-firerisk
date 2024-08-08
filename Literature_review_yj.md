@@ -1,4 +1,4 @@
-# List of literature 
+# List of literature for selecting variables
 ### 1. Reducing the risk of house loss due to wildfires
 (https://www.sciencedirect.com/science/article/pii/S1364815214003776?casa_token=8S41DIT3Q4MAAAAA:L5ViL4x3vhX0Uqi3aMLhmqilQ7kxIJHXFYW7bwUTUWJFpEVNGaAOL9x-HL1BK2lohMrGp1mTtDfK)
   * input variables : housing structure (number of windows, building heights), vegetation
@@ -28,3 +28,12 @@
   * Fuel treatment, prescribed burning can reduce wildfire
   * home insurance plans can companste economic loss
 
+# study site
+ ### 1. Increasing trends of drought
+ - A prolonged summer in Texas, resulting in repetitive droughts, is affecting more than 80% of the state and contributing to wildfire (Vu, 2023). According to the U.S. Drought Monitor, nearly 40% of Texas is experiencing extreme or exceptional drought in 2024. Climate change is expected to increase drought severity, which is likely to further exacerbate the risk of wildfires.
+ - Texas as substatnical number of minorities including Hispanic or Latino, African Americans, Asian American, and Native Americans. Moreover, individuals aged 65 and older make up around 12% to 14% of the total population in Texas. The number of residents aged 65 and older in Texas has been increasing steadily.
+
+
+ # Referencees 
+ * KEVIN VU (2023) "Texas drought has deepened amid this year’s brutal heat" https://www.texastribune.org/2023/10/02/texas-drought-agriculture-wildfires/
+ * U.S. Drought Monitor (2024) https://droughtmonitor.unl.edu/currentmap/statedroughtmonitor.aspx?TX
