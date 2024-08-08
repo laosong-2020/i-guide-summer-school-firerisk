@@ -4,21 +4,46 @@
 
 ## A. Data Collection
  - [ ] **A.1 Informed consent**: If there are human subjects, have they given informed consent, where subjects affirmatively opt-in and have a clear understanding of the data uses to which they consent?
+ * No, our research does not include any data involving human subjects.
+
  - [ ] **A.2 Collection bias**: Have we considered sources of bias that could be introduced during data collection and survey design and taken steps to mitigate those?
+ * When working with raster and vector data, an issue may arise when calculating values in raster data using vector boundaries. Specifically, there are cells that lie on the boundary line (Figure 1). To address this, we utilized the Shapely package in Python, which allows us to classify cells based on their overlap with the boundary. Cells that have 50% or more of their area inside the boundary are considered inside, while those with less than 50% are considered outside. Consequently, we excluded the values of cells classified as outside from our dataset. for further analysis we could consider incorporating Dasymetric method.
+ 
+
+![Figure 1. raster and vector data](https://jo-wilkin.github.io/GEOG0030/coursebook/images/w9/rtovector.png)
+
  - [ ] **A.3 Limit PII exposure**: Have we considered ways to minimize exposure of personally identifiable information (PII) for example through anonymization or not collecting information that isn't relevant for analysis?
+ * The data utilized in our study were already deidentified or aggregated at a higher level to ensure privacy and confidentiality.
+
  - [ ] **A.4 Downstream bias mitigation**: Have we considered ways to enable testing downstream results for biased outcomes (e.g., collecting data on protected group status like race or gender)?
+ * 
 
 ## B. Data Storage
  - [ ] **B.1 Data security**: Do we have a plan to protect and secure data (e.g., encryption at rest and in transit, access controls on internal users and third parties, access logs, and up-to-date software)?
+ * We plan to upload data in a priviately shared repository among the investigator
+
  - [ ] **B.2 Right to be forgotten**: Do we have a mechanism through which an individual can request their personal information be removed?
+ * This may not be applied to our research since did not have data that has individual data
+
  - [ ] **B.3 Data retention plan**: Is there a schedule or plan to delete the data after it is no longer needed?
+ * 
 
 ## C. Analysis
  - [ ] **C.1 Missing perspectives**: Have we sought to address blindspots in the analysis through engagement with relevant stakeholders (e.g., checking assumptions and discussing implications with affected communities and subject matter experts)?
+ * We thoroughly reviewed the metadata of each dataset to ensure a clear understanding of the data creation process and the meaning of each individual variable.
+
  - [ ] **C.2 Dataset bias**: Have we examined the data for possible sources of bias and taken steps to mitigate or address these biases (e.g., stereotype perpetuation, confirmation bias, imbalanced classes, or omitted confounding variables)?
+ * Missing data:
+ * Correlation:
+
  - [ ] **C.3 Honest representation**: Are our visualizations, summary statistics, and reports designed to honestly represent the underlying data?
+ * Yes
+
  - [ ] **C.4 Privacy in analysis**: Have we ensured that data with PII are not used or displayed unless necessary for the analysis?
+ *
+
  - [ ] **C.5 Auditability**: Is the process of generating the analysis well documented and reproducible if we discover issues in the future?
+ *
 
 ## D. Modeling
  - [ ] **D.1 Proxy discrimination**: Have we ensured that the model does not rely on variables or proxies for variables that are unfairly discriminatory?
