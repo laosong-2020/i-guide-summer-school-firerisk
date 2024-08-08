@@ -6,12 +6,9 @@ datasets/TX2/*
 datasets/ClimateEngineTifs/*
 datasets/tl_2023_48_tract/*
 datasets/TX_reprojected/*
+datasets/dataset_bert.csv
 
 models/*
+results/*
 
 catboost_info/*
-
-# ignore requestTest.py for APIKEY secuirity
-requestTest.py
-
-datasets.tgz

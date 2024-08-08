@@ -11,6 +11,7 @@ import os
 
 BASE_DIR = os.getcwd()
 DATASET_DIR = f"{BASE_DIR}/datasets"
+RESULTS_DIR = f"{BASE_DIR}/results"
 
 nri_columns = [
         'TRACTFIPS',

@@ -46,6 +46,13 @@ if __name__ == "__main__":
     nri_df = pd.read_csv(f"{DATASET_DIR}/NRI/NRI_Table_CensusTracts_Texas.csv")
     nri_df = nri_df[nri_columns]
 
+    ybhc_df = pd.read_csv(f"{DATASET_DIR}/yearbuilt_housingcount.csv")
+    ybhc_df = ybhc_df.rename(
+        columns={
+            "GEOID": "GeoId"
+        }
+    )
+
     # Initialize a list to store the results
     results = []
 
@@ -71,6 +78,10 @@ if __name__ == "__main__":
     # clean null rows
     merged_gdf = merged_gdf.dropna(subset=nri_columns)
 
+    merged_gdf = merged_gdf.merge(
+        ybhc_df, left_on='GeoId', right_on='GeoId', how='left'
+    )
+
     for feature_dict in feature_dict_list:
         add_column_by_feature(merged_gdf, feature_dict)
         # add_column_by_feature(gdf, feature_dict["reprojected_file_name"], feature_dict["feature_name"])
@@ -85,3 +96,5 @@ if __name__ == "__main__":
     print(merged_gdf.dtypes)
 
     merged_gdf.to_file(f"{DATASET_DIR}/results.geojson", driver='GeoJSON')
+    merged_df = pd.DataFrame(merged_gdf.drop(columns=['geometry', 'GeoId']))
+    merged_df.to_csv(f"{DATASET_DIR}/results.csv", index=False)
